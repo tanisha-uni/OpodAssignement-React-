@@ -2,7 +2,7 @@ import "../styles/articleText.styles.css";
 import { useContext } from "react";
 import ArticleDataContext from "../store/articleData-context";
 import AudioUrlContext from "../store/audioUrl-context";
-import apiAuthToken from "../apiAuthToken";
+import apiAuthToken from "../authToken";
 
 const ArticleText = () => {
   const { articleSummarizedText, setArticleSummarizedText } =
@@ -16,6 +16,7 @@ const ArticleText = () => {
 
   const fetchAudioHandler = () => {
     // console.log("fetch audio handler executed");
+
     const form = new FormData();
     form.append("article_text", '["' + articleSummarizedText + '"]');
     form.append("language", "english");

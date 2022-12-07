@@ -3,7 +3,7 @@ import InputNumberOfSentences from "./InputNumberOfSentences";
 import InputArticleLink from "./InputArticleLink";
 import ArticleDataContext from "../store/articleData-context";
 import "../styles/articleDetails.styles.css";
-import apiAuthToken from "../apiAuthToken";
+import apiAuthToken from "../authToken";
 
 const ArticleDetails = () => {
   const [articleLink, setArticleLink] = useState("");
