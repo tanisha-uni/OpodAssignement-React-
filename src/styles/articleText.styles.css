@@ -1,0 +1,40 @@
+.article-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title-text{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.article-text-area{
+  height: 280px;
+  border-radius: 5px;
+  border: 1.5px solid lightgray;
+  padding: 15px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.button-wrapper{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.fetch-audio-button{
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: plum;
+  border-radius: 5px;
+  border: 0px;
+  color: white;
+  /* margin: 10px;
+  margin-right: 0px; */
+  height: 30px;
+  width: 20%;
+}

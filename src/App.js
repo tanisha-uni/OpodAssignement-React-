@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import ArticleDetails from "./Components/ArticleDetails";
+import Summarizer from "./Components/Summarizer";
+import ArticleDataContext from "./store/articleData-context";
 
-function App() {
+const App = () => {
+  const [articleSummarizedText, setArticleSummarizedText] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ArticleDataContext.Provider
+      value={{
+        articleSummarizedText,
+        setArticleSummarizedText,
+      }}
+    >
+      <div>
+        <ArticleDetails />
+        <Summarizer />
+      </div>
+    </ArticleDataContext.Provider>
   );
-}
+};
 
 export default App;

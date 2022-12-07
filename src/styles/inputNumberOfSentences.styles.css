@@ -1,0 +1,35 @@
+.title{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.select-option-text{
+  color: gray;
+}
+
+.button-wrapper{
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+}
+
+.unselected-button{
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1.6px solid black;
+  font-size: medium;
+  /* color: aqua; */
+}
+
+.selected-button{
+  border-radius: 5px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1.6px solid black;
+  font-size: medium;
+  background-color: plum;
+}

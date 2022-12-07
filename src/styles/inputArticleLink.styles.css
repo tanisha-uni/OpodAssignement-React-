@@ -1,0 +1,22 @@
+.article-link-text {
+  font-size : 18px;
+  margin-top: 10px;
+}
+
+
+.article-link-input{
+  padding:8px;
+  display:block;
+  border :.5px solid lightgray;
+  border-radius : 5px;
+  height: fit-content;
+  padding: 8px;
+  font-size: medium;
+  margin: 5px;
+  margin-left: 0;
+}
+
+.article-link-wrapper{
+  display: flex;
+  flex-direction: column;
+}

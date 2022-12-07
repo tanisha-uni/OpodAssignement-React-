@@ -1,0 +1,14 @@
+.summarizer-wrapper{
+  margin-top: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* background-color: aqua; */
+  border-radius: 15px;
+  border: 2px solid lightgray;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 40px;
+  height: 330px;
+}
